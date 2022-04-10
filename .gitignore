@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Project artifacts
+BSC/
+canon_model_*/
+trained_model/
