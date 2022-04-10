@@ -2,6 +2,19 @@
 
 An exploration into SMILES detection using a LSTM neural network.
 
+Further discussion can be found in the associated [blog post](https://mattravenhall.github.io/2022/04/10/BinaryStringClassifier.html)
+
+## Quick Start
+```bash
+# Install
+pip install -r requirements.txt
+python3 setup.py install
+
+# View help
+BSC-Data -h
+BSC-Model -h
+```
+
 ## Functionality
 - `BSC-Data`: Entrypoint for dataset creation and curation.
 	- `create`: Create randomly generated datasets within given parameters.
