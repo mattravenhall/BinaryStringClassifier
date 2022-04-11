@@ -2,7 +2,7 @@
 
 An exploration into SMILES detection using a LSTM neural network.
 
-Further discussion can be found in the associated [blog post](https://mattravenhall.github.io/2022/04/10/BinaryStringClassifier.html)
+Further discussion can be found in the associated [blog post](https://mattravenhall.github.io/2022/04/03/BinaryStringClassifier.html)
 
 ## Quick Start
 ```bash

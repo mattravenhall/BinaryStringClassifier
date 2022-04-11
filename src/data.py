@@ -190,14 +190,14 @@ parser_create.add_argument('-c', '--valid_characters', help='Characters that str
 parser_create.add_argument('-o', '--output_path', help='Path to save component dataset to.', type=utils._valid_output_path, default='generated_dataset.txt')
 
 ## Subparser for COMBINE functionality
-help_combine = "Combine multiple components datasets into one ready for training."
+help_combine = "Combine multiple components datasets into one."
 parser_combine = subparsers.add_parser("combine", parents=[parser_debug], description=help_combine, help=help_combine)
 parser_combine.add_argument('-f', '--files_nonsmiles', required=True, nargs='+', help='Path to non-SMILES datasets.', type=utils._file_exists)
 parser_combine.add_argument('-s', '--files_smiles', required=True, nargs='+', help='Path to SMILES datasets.', type=utils._file_exists)
 parser_combine.add_argument('-o', '--output_path', help='Path to save combined dataset to.', type=utils._valid_output_path, default='combined.csv')
 
 ## Subparser for EVALUATE functionality
-help_evaluate = "Generate summary information for given a dataset."
+help_evaluate = "Generate summary information for a given dataset."
 parser_evaluate = subparsers.add_parser("evaluate", parents=[parser_debug], description=help_evaluate, help=help_evaluate)
 parser_evaluate.add_argument('-d', '--datasets', required=True, nargs='+', help='Path to dataset(s) for evaluation.', type=utils._file_exists)
 
